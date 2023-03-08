@@ -1,0 +1,134 @@
+.header {
+  position: fixed;
+  background-color: #1b1e22;
+  display: grid;
+  grid-template-columns: 10px 2fr 3fr 10px 3fr 50% 1fr 10px;
+  height: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.workouts {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.supplements {
+  grid-column: 5/6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+
+.header a {
+  color: #c6cbd2;
+  font-size: 40px;
+}
+
+.footer {
+  position: fixed;
+  background-color: #1b1e22;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding-top: 25px;
+}
+
+.footer a {
+  color: #c6cbd2;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+body {
+  background-color: #e8eaed;
+}
+
+img {
+  height: 300px;
+}
+
+@media (min-width: 750px) {
+    .dropdown {
+      display: none;
+      grid-column:7/8;
+    }
+  
+    .dropdown-content{
+      display: none;
+      position: absolute;
+      background-color: #e8eaed;
+      min-width:75px;
+      z-index: 1;
+    }
+  
+    .dropdown-content a{
+      color: #1b1e22;
+    }
+  
+  
+    .dropdown:hover .dropdown-content{
+      display: block;
+    }
+  
+    .header-right {
+      justify-self: flex-end;
+    }
+  }
+
+@media (max-width: 750px) {
+  .workouts,
+  .supplements {
+    float: none;
+    display: none;
+  }
+  .dropdown {
+    display: flex;
+    grid-column:7/8;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #e8eaed;
+    min-width:75px;
+    z-index: 1;
+    right: 0;
+    height:fit-content;
+  }
+
+  .dropdown-content a{
+    color: #1b1e22;
+  }
+
+
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+
+  .header-right {
+    justify-self: flex-end;
+  }
+}
+
+.attribution a{
+    font-size: 10px;
+}
