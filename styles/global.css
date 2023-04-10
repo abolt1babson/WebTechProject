@@ -130,6 +130,14 @@ img {
   }
 }
 
-.attribution a{
-    font-size: 10px;
+.square{
+  width: 90px;
+  height: 75px;
+  background-color: #c6cbd2;
+  z-index: -1;
+}
+
+svg{
+  margin-left: -95px;
+  z-index: 1;
 }
